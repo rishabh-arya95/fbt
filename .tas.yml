@@ -3,6 +3,7 @@ framework: jest
 preRun:
      command:
         - yarn install --immutable
+        - yarn workspace demo-app test-build-scripts
 preMerge:
   pattern:
     - "**/__tests__/**/*-test.js"
